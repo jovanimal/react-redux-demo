@@ -9,18 +9,22 @@ import IceCreamContainer from './components/IceCreamContainer'
 import BurgerContainer from './components/BurgerContainer'
 import NewCakeContainer from './components/NewCakeContainer'
 import ItemContainer from './components/ItemContainer'
+import UserContainer from './components/UserContainer';
 
 function App() {
   return (
     <Provider store={store}>
       <div className='App'>
-        <ItemContainer cake />
-        <ItemContainer />
-        <HooksCakeContainer />
-        <CakeContainer />
-        <IceCreamContainer />
-        <BurgerContainer />
-        <NewCakeContainer />
+      <UserContainer />
+      {
+        // <ItemContainer cake />
+        // <ItemContainer />
+        // <HooksCakeContainer />
+        // <CakeContainer />
+        // <IceCreamContainer />
+        // <BurgerContainer />
+        // <NewCakeContainer />
+      }
       </div>
     </Provider>
   );
